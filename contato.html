@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imagens/favicon.png" type="image/png">
+    <title>Orçamento - Garage Prime Customs</title>
+    
+    <link rel="stylesheet" href="estilos/style.css">
+    
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="manifest" href="site.webmanifest" />
+
+
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1 class="logo-text">Garage Prime Customs</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="contato.html">Orçamento</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="formulario-contato">
+            <h2>Solicite um Orçamento</h2>
+            
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>Seus Dados</legend>
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" required placeholder="Seu nome aqui">
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required placeholder="exemplo@email.com">
+
+                    <label for="telefone">Telefone / WhatsApp:</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-8888">
+
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" id="cidade" name="cidade">
+
+                    <label for="estado">Estado:</label>
+                    <input type="text" id="estado" name="estado">
+                </fieldset>
+        
+                <fieldset>
+                    <legend>Dados do Veículo</legend>
+                    <label for="marca">Marca:</label>
+                    <input type="text" id="marca" name="marca" required>
+
+                    <label for="modelo">Modelo:</label>
+                    <input type="text" id="modelo" name="modelo" required>
+
+                    <label for="ano">Ano de Fabricação:</label>
+                    <input type="number" id="ano" name="ano" min="1900" max="2026" required>
+
+                    <label for="placa">Placa (opcional):</label>
+                    <input type="text" id="placa" name="placa">
+
+                    <label for="chassi">Nº Chassi (VIN) (opcional):</label>
+                    <input type="text" id="chassi" name="chassi">
+                </fieldset>
+        
+                <fieldset>
+                    <legend>Serviços Desejados</legend>
+                    <label>Selecione os serviços de interesse:</label>
+                    <input type="checkbox" id="pintura" name="servico_pintura" value="pintura">
+                    <label for="pintura">Pintura</label>
+                    <input type="checkbox" id="motor" name="servico_motor" value="motor">
+                    <label for="motor">Motor</label>
+                    <input type="checkbox" id="suspensao" name="servico_suspensao" value="suspensao">
+                    <label for="suspensao">Suspensão</label>
+                    <input type="checkbox" id="interior" name="servico_interior" value="interior">
+                    <label for="interior">Interior</label>
+                    
+                    <label for="tipo-pintura">Tipo de Pintura:</label>
+                    <select id="tipo-pintura" name="tipo-pintura">
+                        <option value="">Não se aplica</option>
+                        <option value="solida">Sólida</option>
+                        <option value="metalica">Metálica</option>
+                        <option value="perolizada">Perolizada</option>
+                        <option value="kandy">Kandy/Flake</option>
+                    </select>
+                    
+                    <label>Urgência do projeto:</label>
+                    <input type="radio" id="urg-normal" name="urgencia" value="normal" checked>
+                    <label for="urg-normal">Normal</label>
+                    <input type="radio" id="urg-alta" name="urgencia" value="alta">
+                    <label for="urg-alta">Alta Prioridade</label>
+                    
+                    <label for="orcamento">Expectativa de Orçamento (R$):</label>
+                    <input type="range" id="orcamento" name="orcamento" min="5000" max="100000" step="1000">
+
+                    <label for="fotos">Envie fotos do estado atual do veículo:</label>
+                    <input type="file" id="fotos" name="fotos" accept="image/*" multiple>
+
+                    <label for="detalhes">Descreva seu projeto em detalhes:</label>
+                    <textarea id="detalhes" name="detalhes" rows="6" placeholder="Quanto mais detalhes, mais preciso será o orçamento."></textarea>
+                    
+                    <input type="hidden" name="source" value="website-contact">
+                    <label for="data-contato">Melhor data para contato:</label>
+                    <input type="date" id="data-contato" name="data-contato">
+                </fieldset>
+                
+                <button type="submit">Enviar Pedido de Orçamento</button>
+            </form>
+
+            <div class="conteudo-extra">
+                <h3>Como Funciona Nosso Orçamento?</h3>
+                <p>Após o envio do formulário, nossa equipe técnica fará uma análise preliminar das informações e fotos enviadas. Entraremos em contato no telefone ou e-mail fornecido dentro de 48 horas úteis para discutir os detalhes do seu projeto e, se necessário, agendar uma avaliação presencial do veículo.</p>
+                <p>Acreditamos na transparência total. O orçamento detalhado que forneceremos irá discriminar os custos de mão de obra, peças e materiais, para que você saiba exatamente onde seu investimento está sendo aplicado. Projetos de grande escala podem ter um cronograma de desembolso faseado, alinhado com as etapas de execução do serviço.</p>
+                <p>Nossa paixão é transformar sonhos em realidade, mas nosso compromisso é com a qualidade e a segurança. Nunca faremos uma modificação que comprometa a integridade estrutural ou a segurança do seu veículo. Todas as alterações são discutidas e aprovadas por você antes de serem executadas.</p>
+                <p>Seus dados estão seguros conosco. As informações enviadas através deste formulário são confidenciais e utilizadas exclusivamente para a finalidade de orçamento e contato sobre o seu projeto. Não compartilhamos suas informações com terceiros.</p>
+  
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-info">
+            <h4>Nossa Localização</h4>
+            <p>Rua da Oficina, 456, Bairro Industrial</p>
+            <p>contato@garageprime.com</p>
+            <p>Agendamentos: (61) 98765-4321</p>
+        </div>
+        <div class="footer-links">
+            <h4>Siga Nossos Projetos</h4>
+            <a href="#"><img src="icones/instagram.svg" alt="Instagram" class="icone-social"></a>
+            <a href="#"><img src="icones/whatsapp.svg" alt="WhatsApp" class="icone-social"></a>
+            <p>&copy; 2025 Garage Prime Customs. Potência e Estilo.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
